@@ -2,38 +2,40 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
+// Activity Images
+import educationImage from "../assets/images/activities/educational-activities.png";
+import beautyImage from "../assets/images/activities/beauty-makeup.png";
+import mehndiImage from "../assets/images/activities/mehndi-designing.png";
+import tailoringImage from "../assets/images/activities/tailoring-stitching.png";
+
 const activities = [
   {
     title: "Educational Activities",
     category: "EDUCATION",
     description:
       "Encouraging learning, knowledge and educational awareness.",
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=85"
+    image: educationImage
   },
   {
     title: "Beauty & Makeup",
     category: "BEAUTY SKILLS",
     description:
       "Exploring beauty care, makeup and practical grooming skills.",
-    image:
-      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900&q=85"
+    image: beautyImage
   },
   {
     title: "Mehndi Designing",
     category: "CREATIVE SKILLS",
     description:
       "Showcasing traditional mehndi art and creative designs.",
-    image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=900&q=85"
+    image: mehndiImage
   },
   {
     title: "Tailoring & Stitching",
     category: "VOCATIONAL SKILLS",
     description:
       "Promoting stitching, sewing and garment-making skills.",
-    image:
-      "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=900&q=85"
+    image: tailoringImage
   }
 ];
 
