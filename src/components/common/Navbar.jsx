@@ -1,7 +1,8 @@
 
 import { useState } from "react";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import logo from "../../assets/images/logo_gsr.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -14,7 +15,9 @@ const navLinks = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const closeMenu = () => setIsOpen(false);
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur-md">
@@ -22,10 +25,16 @@ function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
 
         {/* Brand Logo */}
-        <a href="#home" className="flex items-center gap-3" onClick={closeMenu}>
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white">
-            <GraduationCap size={26} />
-          </div>
+        <a
+          href="#home"
+          className="flex items-center gap-3"
+          onClick={closeMenu}
+        >
+          <img
+            src={logo}
+            alt="G.S.R. Logo"
+            className="h-12 w-12 rounded-lg object-contain"
+          />
 
           <div>
             <h2 className="font-heading text-xl font-bold text-primary">
@@ -59,10 +68,12 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          type="button"
+          onClick={() => setIsOpen((prev) => !prev)}
           className="flex h-10 w-10 items-center justify-center rounded-lg text-primary transition-colors hover:bg-background md:hidden"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
@@ -73,11 +84,12 @@ function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-border bg-white md:hidden"
+            id="mobile-navigation"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="absolute left-0 right-0 top-full overflow-hidden border-t border-border bg-white shadow-xl md:hidden"
           >
             <div className="flex flex-col px-5 py-4">
               {navLinks.map((link) => (
