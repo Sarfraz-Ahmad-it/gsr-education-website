@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
+import heroImage from "../assets/images/hero-education.png";
 
 function Hero() {
   return (
@@ -72,10 +73,10 @@ function Hero() {
 
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1000&q=85"
-              alt="Students learning together"
-              className="h-[350px] w-full object-cover sm:h-[450px] md:h-[520px]"
-            />
+              src={heroImage}
+              alt="Young students representing education and empowerment"
+              className="h-[350px] w-full rounded-3xl object-cover sm:h-[450px] md:h-[520px]"
+            />  
           </div>
 
           <div className="absolute -bottom-5 -left-3 rounded-2xl border border-border bg-white p-4 shadow-xl sm:-left-6">
