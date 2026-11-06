@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { BookOpen, Users, BriefcaseBusiness, HeartHandshake } from "lucide-react";
-
+import aboutImage from "../assets/images/about-institution.png";
 const focusAreas = [
   {
     icon: BookOpen,
@@ -39,10 +39,10 @@ function About() {
           className="relative"
         >
           <img
-            src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1000&q=85"
-            alt="Students participating in education activities"
-            className="h-[400px] w-full rounded-3xl object-cover md:h-[520px]"
-          />
+          src={aboutImage}
+          alt="Women learning and developing practical skills"
+          className="h-full w-full rounded-3xl object-cover"
+        />
 
           <div className="absolute -bottom-5 -right-3 rounded-2xl bg-primary p-5 text-white shadow-xl sm:-right-5">
             <p className="font-heading text-2xl font-bold">
