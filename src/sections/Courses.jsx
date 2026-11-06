@@ -1,61 +1,61 @@
 
 import { motion } from "framer-motion";
-import {
-  Sparkles,
-  Hand,
-  Scissors,
-  Monitor,
-  Palette,
-  BriefcaseBusiness,
-  BookOpen,
-  HeartPulse
-} from "lucide-react";
+
+// Course Images
+import beauticianImage from "../assets/images/courses/beautician-training.png";
+import mehndiImage from "../assets/images/courses/mehndi-designing.png";
+import tailoringImage from "../assets/images/courses/tailoring-stitching.png";
+import computerImage from "../assets/images/courses/computer-education.png";
+import artsCraftsImage from "../assets/images/courses/arts-crafts.png";
+import selfEmploymentImage from "../assets/images/courses/self-employment.png";
+import basicEducationImage from "../assets/images/courses/basic-education.png";
+import healthImage from "../assets/images/courses/health-awareness.png";
 
 const courses = [
   {
-    icon: Sparkles,
+    image: beauticianImage,
     title: "Beautician Training",
     description:
       "Develop beauty care, makeup and professional grooming skills."
   },
   {
-    icon: Hand,
+    image: mehndiImage,
     title: "Mehndi Designing",
     description:
       "Explore traditional and creative mehndi designing skills."
   },
   {
-    icon: Scissors,
+    image: tailoringImage,
     title: "Tailoring & Stitching",
     description:
       "Learn stitching, sewing and garment-making skills."
   },
   {
-    icon: Monitor,
+    image: computerImage,
     title: "Computer Education",
     description:
       "Build basic computer knowledge and digital skills."
   },
   {
-    icon: Palette,
+    image: artsCraftsImage,
     title: "Arts & Crafts",
     description:
       "Explore painting, embroidery, knitting and handicrafts."
   },
   {
-    icon: BriefcaseBusiness,
+    image: selfEmploymentImage,
     title: "Self Employment",
     description:
       "Explore small business and self-employment opportunities."
   },
   {
-    icon: BookOpen,
+    image: basicEducationImage,
     title: "Basic Education",
     description:
       "Promote learning, educational awareness and knowledge."
   },
   {
-    icon: HeartPulse,
+    image: healthImage,
     title: "Health Awareness",
     description:
       "Understand healthcare facilities and health awareness."
@@ -96,26 +96,33 @@ function Courses() {
         {/* Course Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-          {courses.map((course, index) => {
-            const Icon = course.icon;
+          {courses.map((course, index) => (
+            <motion.div
+              key={course.title}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.5,
+                delay: (index % 4) * 0.1
+              }}
+              className="group overflow-hidden rounded-2xl border border-border bg-background transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:bg-white hover:shadow-xl"
+            >
 
-            return (
-              <motion.div
-                key={course.title}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.5,
-                  delay: (index % 4) * 0.1
-                }}
-                className="group rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:bg-white hover:shadow-xl"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <Icon size={26} />
-                </div>
+              {/* Course Image */}
+              <div className="overflow-hidden">
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  loading="lazy"
+                  className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-                <h3 className="mt-6 font-heading text-lg font-bold text-heading">
+              {/* Course Content */}
+              <div className="p-6">
+
+                <h3 className="font-heading text-lg font-bold text-heading">
                   {course.title}
                 </h3>
 
@@ -125,13 +132,15 @@ function Courses() {
 
                 <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-primary">
                   Explore Area
+
                   <span className="transition-transform duration-300 group-hover:translate-x-2">
                     →
                   </span>
                 </div>
-              </motion.div>
-            );
-          })}
+
+              </div>
+            </motion.div>
+          ))}
 
         </div>
       </div>
