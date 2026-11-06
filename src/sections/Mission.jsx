@@ -1,47 +1,47 @@
 
 import { motion } from "framer-motion";
-import {
-  BookOpen,
-  Scissors,
-  Sparkles,
-  BriefcaseBusiness,
-  Monitor,
-  HeartPulse
-} from "lucide-react";
+
+// Import Mission Images
+import educationImage from "../assets/images/mission/education-awareness.png";
+import vocationalImage from "../assets/images/mission/vocational-skills.png";
+import beautyImage from "../assets/images/mission/personal-care.png";
+import employmentImage from "../assets/images/mission/employment-opportunities.png";
+import digitalImage from "../assets/images/mission/digital-skills.png";
+import healthImage from "../assets/images/mission/health-wellbeing.png";
 
 const objectives = [
   {
-    icon: BookOpen,
+    image: educationImage,
     title: "Education & Awareness",
     description:
       "Promoting education and creating awareness about the importance of learning."
   },
   {
-    icon: Scissors,
+    image: vocationalImage,
     title: "Vocational Skills",
     description:
       "Encouraging tailoring, stitching, embroidery, knitting and handicraft skills."
   },
   {
-    icon: Sparkles,
+    image: beautyImage,
     title: "Beauty & Personal Care",
     description:
       "Promoting beautician training, mehndi designing and beauty-related skills."
   },
   {
-    icon: BriefcaseBusiness,
+    image: employmentImage,
     title: "Employment Opportunities",
     description:
       "Encouraging self-employment, small businesses and cottage industries."
   },
   {
-    icon: Monitor,
+    image: digitalImage,
     title: "Digital Skills",
     description:
       "Promoting computer education and digital skill development."
   },
   {
-    icon: HeartPulse,
+    image: healthImage,
     title: "Health & Well-being",
     description:
       "Creating awareness about healthcare facilities and health services."
@@ -81,35 +81,42 @@ function Mission() {
 
         {/* Objective Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {objectives.map((item, index) => {
-            const Icon = item.icon;
+          {objectives.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1
+              }}
+              className="group overflow-hidden rounded-2xl border border-border bg-white transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
+            >
 
-            return (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1
-                }}
-                className="group rounded-2xl border border-border bg-white p-7 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
-                  <Icon size={27} />
-                </div>
+              {/* Card Image */}
+              <div className="overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-                <h3 className="mt-6 font-heading text-xl font-bold text-heading">
+              {/* Card Content */}
+              <div className="p-7">
+                <h3 className="font-heading text-xl font-bold text-heading">
                   {item.title}
                 </h3>
 
                 <p className="mt-3 text-sm leading-7 text-muted">
                   {item.description}
                 </p>
-              </motion.div>
-            );
-          })}
+              </div>
+
+            </motion.div>
+          ))}
         </div>
 
       </div>
