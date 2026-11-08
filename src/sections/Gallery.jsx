@@ -3,57 +3,197 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
+// Learning & Activities Images
+import educationImage from "../assets/images/gallery/educational-activities.png";
+import beautyImage from "../assets/images/gallery/beauty-makeup.png";
+import mehndiActivityImage from "../assets/images/gallery/creative-mehndi-art.png";
+import tailoringImage from "../assets/images/gallery/tailoring-stitching.png";
+import learningImage from "../assets/images/gallery/learning-together.png";
+import digitalImage from "../assets/images/gallery/digital-learning.png";
+
+// Client's Original Mehndi Designs
+import mehndi1 from "../assets/images/gallery/portfolio/mehndi-01.jpg";
+import mehndi2 from "../assets/images/gallery/portfolio/mehndi-02.jpg";
+import mehndi3 from "../assets/images/gallery/portfolio/mehndi-03.jpg";
+import mehndi4 from "../assets/images/gallery/portfolio/mehndi-04.jpg";
+import mehndi5 from "../assets/images/gallery/portfolio/mehndi-05.jpg";
+import mehndi6 from "../assets/images/gallery/portfolio/mehndi-06.jpg";
+
+
+// Client's Original Bridal Makeup Looks
+import bridal1 from "../assets/images/gallery/portfolio/bridal-01.jpg";
+import bridal2 from "../assets/images/gallery/portfolio/bridal-02.jpg";
+import bridal3 from "../assets/images/gallery/portfolio/bridal-03.jpg";
+import bridal4 from "../assets/images/gallery/portfolio/bridal-04.jpg";
+import bridal5 from "../assets/images/gallery/portfolio/bridal-05.jpg";
+import bridal6 from "../assets/images/gallery/portfolio/bridal-06.jpg";
+
+//Learning video and beauty skills
+import beauty from "../assets/videos/beauty.mp4"; 
+import education1 from "../assets/videos/education01.mp4"; 
+import education_kalma from "../assets/videos/kalma_class.mp4"; 
+import education_hindi from "../assets/videos/hindi_class.mp4"; 
+
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000&q=85",
+    src: educationImage,
     title: "Educational Activities",
     category: "Education",
   },
   {
-    src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1000&q=85",
+    src: beautyImage,
     title: "Beauty & Makeup",
     category: "Beauty Skills",
   },
   {
-    src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1000&q=85",
+    src: mehndiActivityImage,
     title: "Creative Mehndi Art",
     category: "Creative Skills",
   },
   {
-    src: "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=1000&q=85",
+    src: tailoringImage,
     title: "Tailoring & Stitching",
     category: "Vocational Skills",
   },
   {
-    src: "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1000&q=85",
+    src: learningImage,
     title: "Learning Together",
     category: "Education",
   },
   {
-    src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&q=85",
+    src: digitalImage,
     title: "Digital Learning",
     category: "Computer Skills",
   },
 ];
 
+const mehndiPortfolio = [
+  {
+    src: mehndi1,
+    title: "Bridal Hand Mehndi",
+    category: "Mehndi Art",
+  },
+  {
+    src: mehndi2,
+    title: "Bridal Hand Mehndi",
+    category: "Mehndi Art",
+  },
+  {
+    src: mehndi3,
+    title: "Bridal Hand Mehndi",
+    category: "Mehndi Art",
+  },
+  {
+    src: mehndi4,
+    title: " Bridal Feet & Hand Mehndi",
+    category: "Mehndi Art",
+  },
+  {
+    src: mehndi5,
+    title: " Bridal Feet Mehndi",
+    category: "Mehndi Art",
+  },
+  {
+    src: mehndi6,
+    title: " Bridal Feet Mehndi",
+    category: "Mehndi Art",
+  },
+];
+
+const bridalPortfolio = [
+  {
+    src: bridal1,
+    title: "Bridal Makeup Look 01",
+    category: "Bridal Makeup",
+  },
+  {
+    src: bridal2,
+    title: "Bridal Makeup Look 02",
+    category: "Bridal Makeup",
+  },
+  {
+    src: bridal3,
+    title: "Bridal Makeup Look 03",
+    category: "Bridal Makeup",
+  },
+  {
+    src: bridal4,
+    title: "Bridal Makeup Look 04",
+    category: "Bridal Makeup",
+  },
+  {
+    src: bridal5,
+    title: "Bridal Makeup Look 05",
+    category: "Bridal Makeup",
+  },
+  {
+    src: bridal6,
+    title: "Bridal Makeup Look 06",
+    category: "Bridal Makeup",
+  },
+];
+
+function GalleryCard({ image, index, onClick }) {
+  return (
+    <motion.button
+      type="button"
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
+      onClick={onClick}
+      aria-label={`View ${image.title}`}
+      className="group relative overflow-hidden rounded-xl bg-background text-left sm:rounded-2xl"
+    >
+      <img
+        src={image.src}
+        alt={image.title}
+        loading="lazy"
+        className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-90" />
+
+      <div className="absolute bottom-0 left-0 p-3 sm:p-5">
+        <span className="text-[10px] font-semibold uppercase tracking-wider text-accent">
+          {image.category}
+        </span>
+
+        <h3 className="mt-1 text-sm font-semibold text-white sm:text-lg">
+          {image.title}
+        </h3>
+      </div>
+    </motion.button>
+  );
+}
+
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const currentIndex = galleryImages.findIndex(
+  const allImages = [
+    ...galleryImages,
+    ...mehndiPortfolio,
+    ...bridalPortfolio,
+  ];
+
+  const currentIndex = allImages.findIndex(
     (image) => image === selectedImage
   );
 
   const showNext = () => {
+    if (currentIndex === -1) return;
+
     setSelectedImage(
-      galleryImages[(currentIndex + 1) % galleryImages.length]
+      allImages[(currentIndex + 1) % allImages.length]
     );
   };
 
   const showPrevious = () => {
+    if (currentIndex === -1) return;
+
     setSelectedImage(
-      galleryImages[
-        (currentIndex - 1 + galleryImages.length) %
-          galleryImages.length
+      allImages[
+        (currentIndex - 1 + allImages.length) % allImages.length
       ]
     );
   };
@@ -65,8 +205,14 @@ function Gallery() {
     >
       <div className="mx-auto max-w-7xl px-4 md:px-8">
 
-        {/* Heading */}
-        <div className="mx-auto mb-14 max-w-2xl text-center">
+        {/* Main Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto mb-14 max-w-2xl text-center"
+        >
           <span className="text-sm font-bold tracking-widest text-primary">
             OUR GALLERY
           </span>
@@ -77,46 +223,90 @@ function Gallery() {
 
           <p className="mt-5 leading-8 text-muted">
             Explore moments of education, creativity
-            and skill development.
+            and practical skill development.
           </p>
+        </motion.div>
+
+        {/* Learning & Activities */}
+        <div>
+          <div className="mb-7">
+            <h3 className="font-heading text-2xl font-bold text-heading md:text-3xl">
+              Learning & Activities
+            </h3>
+
+            <p className="mt-2 text-sm leading-7 text-muted">
+              A glimpse into different areas of learning and development.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+            {galleryImages.map((image, index) => (
+              <GalleryCard
+                key={image.title}
+                image={image}
+                index={index}
+                onClick={() => setSelectedImage(image)}
+              />
+            ))}
+          </div>
         </div>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+        {/* Mehndi Portfolio */}
+        <div className="mt-20">
+          <div className="mb-7">
+            <span className="text-xs font-bold tracking-widest text-primary">
+              CREATIVE PORTFOLIO
+            </span>
 
-          {galleryImages.map((image, index) => (
-            <motion.button
-              type="button"
-              key={image.title}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              onClick={() => setSelectedImage(image)}
-              className="group relative overflow-hidden rounded-xl text-left sm:rounded-2xl"
-              aria-label={`View ${image.title}`}
-            >
-              <img
-                src={image.src}
-                alt={image.title}
-                loading="lazy"
-                className="h-44 w-full object-cover transition-transform duration-700 group-hover:scale-110 sm:h-64 lg:h-72"
+            <h3 className="mt-3 font-heading text-2xl font-bold text-heading md:text-3xl">
+              Mehndi Art & Designs
+            </h3>
+
+            <p className="mt-2 text-sm leading-7 text-muted">
+              Showcasing intricate traditional mehndi patterns
+              and creative designs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5">
+            {mehndiPortfolio.map((image, index) => (
+              <GalleryCard
+                key={image.title}
+                image={image}
+                index={index}
+                onClick={() => setSelectedImage(image)}
               />
+            ))}
+          </div>
+        </div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-100" />
+        {/* Bridal Makeup Portfolio */}
+        <div className="mt-20">
+          <div className="mb-7">
+            <span className="text-xs font-bold tracking-widest text-primary">
+              BEAUTY PORTFOLIO
+            </span>
 
-              <div className="absolute bottom-0 left-0 p-3 sm:p-5">
-                <span className="text-[10px] font-semibold uppercase tracking-wider text-accent">
-                  {image.category}
-                </span>
+            <h3 className="mt-3 font-heading text-2xl font-bold text-heading md:text-3xl">
+              Bridal Makeup Looks
+            </h3>
 
-                <h3 className="mt-1 text-sm font-semibold text-white sm:text-lg">
-                  {image.title}
-                </h3>
-              </div>
-            </motion.button>
-          ))}
+            <p className="mt-2 text-sm leading-7 text-muted">
+              Showcasing bridal makeup, styling and beauty
+              transformation work.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5">
+            {bridalPortfolio.map((image, index) => (
+              <GalleryCard
+                key={image.title}
+                image={image}
+                index={index}
+                onClick={() => setSelectedImage(image)}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Lightbox */}
@@ -167,6 +357,10 @@ function Gallery() {
                 <p className="mt-3 text-center font-semibold text-white">
                   {selectedImage.title}
                 </p>
+
+                <p className="mt-1 text-center text-xs text-white/60">
+                  {selectedImage.category}
+                </p>
               </motion.div>
 
               <button
@@ -200,46 +394,106 @@ function Gallery() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-
-            <div className="overflow-hidden rounded-2xl border border-border bg-background">
-              <div className="flex aspect-video items-center justify-center bg-primary/10">
-                <Play size={45} className="text-primary" />
-              </div>
-
-              <div className="p-5">
-                <h4 className="font-semibold text-heading">
-                  Makeup Training Session
-                </h4>
-                <p className="mt-2 text-sm text-muted">
-                  Practical makeup learning and demonstration.
-                </p>
-                <p className="mt-3 text-xs text-primary">
-                  Video coming soon
-                </p>
-              </div>
+          
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <div className="bg-black">
+              <video
+                className="mx-auto max-h-[500px] w-full object-contain"
+                controls
+                preload="metadata"
+                playsInline
+              >
+                <source src={beauty} type="video/mp4" />
+                Your browser does not support video playback.
+              </video>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-border bg-background">
-              <div className="flex aspect-video items-center justify-center bg-primary/10">
-                <Play size={45} className="text-primary" />
-              </div>
+            <div className="p-5">
+              <h4 className="font-semibold text-heading">
+                Beauty Skills Demonstration
+              </h4>
 
-              <div className="p-5">
-                <h4 className="font-semibold text-heading">
-                  Beauty Skills Demonstration
-                </h4>
-                <p className="mt-2 text-sm text-muted">
-                  Learning beauty techniques through practical demonstrations.
-                </p>
-                <p className="mt-3 text-xs text-primary">
-                  Video coming soon
-                </p>
-              </div>
+              <p className="mt-2 text-sm leading-6 text-muted">
+                Practical beauty and makeup training demonstrations.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <div className="bg-black">
+             <video
+                className="mx-auto max-h-[500px] w-full object-contain"
+                controls
+                preload="metadata"
+                playsInline
+              >
+                <source src={education1} type="video/mp4" />
+                Your browser does not support video playback.
+             </video>
             </div>
 
+               <div className="p-5">
+                <h4 className="font-semibold text-heading">
+                   Learning & Educational Activities
+                </h4>
+
+                <p className="mt-2 text-sm leading-6 text-muted">
+                   A glimpse of learning activities and practical experiences at G.S.R. Education.
+                </p>
+               </div>
+          </div>
+
+          {/* 3 */}
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <div className="bg-black">
+             <video
+                className="mx-auto max-h-[500px] w-full object-contain"
+                controls
+                preload="metadata"
+                playsInline
+              >
+                <source src={education_hindi} type="video/mp4" />
+                Your browser does not support video playback.
+             </video>
+            </div>
+
+               <div className="p-5">
+                <h4 className="font-semibold text-heading">
+                   Learning & Educational Activities
+                </h4>
+
+                <p className="mt-2 text-sm leading-6 text-muted">
+                   A glimpse of learning activities and practical experiences at G.S.R. Education.
+                </p>
+               </div>
+          </div>
+          {/* 4 */}
+          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
+            <div className="bg-black">
+             <video
+                className="mx-auto max-h-[500px] w-full object-contain"
+                controls
+                preload="metadata"
+                playsInline
+              >
+                <source src={education_kalma} type="video/mp4" />
+                Your browser does not support video playback.
+             </video>
+            </div>
+
+               <div className="p-5">
+                <h4 className="font-semibold text-heading">
+                   Learning & Educational Activities
+                </h4>
+
+                <p className="mt-2 text-sm leading-6 text-muted">
+                   A glimpse of learning activities and practical experiences at G.S.R. Education.
+                </p>
+               </div>
           </div>
         </div>
+      </div>
 
       </div>
     </section>
