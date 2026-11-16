@@ -74,7 +74,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
             <img
               src={heroImage}
-              alt="Young students representing education and empowerment"
+              alt="Children and girls at GSR Education promoting quality education and learning opportunities"
               className="h-[350px] w-full rounded-3xl object-cover sm:h-[450px] md:h-[520px]"
             />  
           </div>
