@@ -13,36 +13,42 @@ const objectives = [
   {
     image: educationImage,
     title: "Education & Awareness",
+    alt: "Girls studying together and promoting education awareness at GSR Education Saharanpur",
     description:
       "Promoting education and creating awareness about the importance of learning."
   },
   {
     image: vocationalImage,
     title: "Vocational Skills",
+     alt: "Women learning sewing and tailoring skills during vocational training at GSR Education Saharanpur",
     description:
       "Encouraging tailoring, stitching, embroidery, knitting and handicraft skills."
   },
   {
     image: beautyImage,
     title: "Beauty & Personal Care",
+     alt: "Women learning facial treatment and skincare techniques during beauty training at GSR Education Saharanpur",
     description:
       "Promoting beautician training, mehndi designing and beauty-related skills."
   },
   {
     image: employmentImage,
     title: "Employment Opportunities",
+    alt: "Women creating handmade products and learning entrepreneurial skills through vocational training at GSR Education Saharanpur",
     description:
       "Encouraging self-employment, small businesses and cottage industries."
   },
   {
     image: digitalImage,
     title: "Digital Skills",
+    alt: "Women learning computer skills during digital literacy training at GSR Education Saharanpur",
     description:
       "Promoting computer education and digital skill development."
   },
   {
     image: healthImage,
     title: "Health & Well-being",
+    alt: "Women receiving health and wellness education during a health awareness training session at GSR Education Saharanpur",
     description:
       "Creating awareness about healthcare facilities and health services."
   }
