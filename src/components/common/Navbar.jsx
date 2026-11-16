@@ -22,7 +22,9 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur-md">
 
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
+      <nav 
+       aria-label="Main navigation"
+       className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
 
         {/* Brand Logo */}
         <a
@@ -32,14 +34,14 @@ function Navbar() {
         >
           <img
             src={logo}
-            alt="G.S.R. Logo"
+            alt="G.S.R. Education All Classes logo"
             className="h-12 w-12 rounded-lg object-contain"
           />
 
           <div>
-            <h2 className="font-heading text-xl font-bold text-primary">
+            <span className="font-heading text-xl font-bold text-primary">
               G.S.R.
-            </h2>
+            </span>
             <p className="text-[10px] font-semibold tracking-wider text-muted">
               EDUCATION ALL CLASSES
             </p>
