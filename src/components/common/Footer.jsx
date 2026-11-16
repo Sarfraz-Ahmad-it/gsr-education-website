@@ -13,9 +13,7 @@ const footerLinks = [
 ];
 
 const contactNumbers = [
-  "8171225629",
-  "6399556530",
-  "9720036735",
+  "917830170699"
 ];
 
 // Confirm this is the institution's official WhatsApp number.
@@ -44,9 +42,9 @@ function Footer() {
               />
 
               <div>
-                <h2 className="font-heading text-2xl font-bold">
+                <span className="font-heading text-2xl font-bold">
                   G.S.R.
-                </h2>
+                </span>
 
                 <p className="text-[10px] font-semibold tracking-widest text-white/60">
                   EDUCATION ALL CLASSES
