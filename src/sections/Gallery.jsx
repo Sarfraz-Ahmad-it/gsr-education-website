@@ -31,38 +31,42 @@ import bridal6 from "../assets/images/gallery/portfolio/bridal-06.jpg";
 //Learning video and beauty skills
 import beauty from "../assets/videos/beauty.mp4"; 
 import education1 from "../assets/videos/education01.mp4"; 
-import education_kalma from "../assets/videos/kalma_class.mp4"; 
-import education_hindi from "../assets/videos/hindi_class.mp4"; 
 
 const galleryImages = [
   {
     src: educationImage,
     title: "Educational Activities",
+    alt: "Women learning basic education and literacy skills during educational training at GSR Education Saharanpur",
     category: "Education",
   },
   {
     src: beautyImage,
     title: "Beauty & Makeup",
+    alt: "Women learning beauty care and makeup techniques during training at GSR Education Saharanpur",
     category: "Beauty Skills",
   },
   {
     src: mehndiActivityImage,
     title: "Creative Mehndi Art",
+    alt: "Women learning traditional and creative mehndi designing skills during training at GSR Education Saharanpur",
     category: "Creative Skills",
   },
   {
     src: tailoringImage,
     title: "Tailoring & Stitching",
+    alt: "Women learning tailoring and stitching skills during vocational training at GSR Education Saharanpur",
     category: "Vocational Skills",
   },
   {
     src: learningImage,
     title: "Learning Together",
+    alt: "Women learning together in a collaborative environment at GSR Education Saharanpur",
     category: "Education",
   },
   {
     src: digitalImage,
     title: "Digital Learning",
+    alt: "Women learning digital skills during training at GSR Education Saharanpur",
     category: "Computer Skills",
   },
 ];
@@ -70,32 +74,38 @@ const galleryImages = [
 const mehndiPortfolio = [
   {
     src: mehndi1,
-    title: "Bridal Hand Mehndi",
+    title: "Beautiful Front Hand Mehndi Design–Floral Patterns",
+    alt: "Women learning bridal mehndi designs during training at GSR Education Saharanpur",
     category: "Mehndi Art",
   },
   {
     src: mehndi2,
-    title: "Bridal Hand Mehndi",
+    title: "Beautiful Front Hand Mehndi Design–Floral Patterns",
+    alt: "Beautiful front hand mehndi design with detailed floral and Arabic patterns",
     category: "Mehndi Art",
   },
   {
     src: mehndi3,
-    title: "Bridal Hand Mehndi",
+    title: "Traditional Full Hand Mehndi Design–Intricate Patterns",
+    alt: "Women learning bridal mehndi designs during training at GSR Education Saharanpur",
     category: "Mehndi Art",
   },
   {
     src: mehndi4,
-    title: " Bridal Feet & Hand Mehndi",
+    title: "Traditional Full Hand and Foot Mehndi Design–Bridal Mehndi Art",  
+    alt: "Traditional full hand and foot mehndi designs featuring detailed floral and Arabic patterns by GSR Education",
     category: "Mehndi Art",
   },
   {
     src: mehndi5,
-    title: " Bridal Feet Mehndi",
+    title: "Bridal Foot Mehndi Design-Traditional Arabic Patterns",
+    alt: "Traditional bridal foot mehndi design with intricate floral and paisley patterns",
     category: "Mehndi Art",
   },
   {
     src: mehndi6,
-    title: " Bridal Feet Mehndi",
+    title: "Beautiful Bridal Foot Mehndi Design–Floral and Traditional Patterns",
+    alt: "Beautiful bridal foot mehndi design with intricate floral, leaf and traditional patterns by GSR Education",
     category: "Mehndi Art",
   },
 ];
@@ -104,31 +114,37 @@ const bridalPortfolio = [
   {
     src: bridal1,
     title: "Bridal Makeup Look 01",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
   {
     src: bridal2,
     title: "Bridal Makeup Look 02",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
   {
     src: bridal3,
     title: "Bridal Makeup Look 03",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
   {
     src: bridal4,
     title: "Bridal Makeup Look 04",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
   {
     src: bridal5,
     title: "Bridal Makeup Look 05",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
   {
     src: bridal6,
     title: "Bridal Makeup Look 06",
+    alt: "Women learning bridal makeup techniques and styles during training at GSR Education Saharanpur",
     category: "Bridal Makeup",
   },
 ];
@@ -429,55 +445,6 @@ function Gallery() {
                 playsInline
               >
                 <source src={education1} type="video/mp4" />
-                Your browser does not support video playback.
-             </video>
-            </div>
-
-               <div className="p-5">
-                <h4 className="font-semibold text-heading">
-                   Learning & Educational Activities
-                </h4>
-
-                <p className="mt-2 text-sm leading-6 text-muted">
-                   A glimpse of learning activities and practical experiences at G.S.R. Education.
-                </p>
-               </div>
-          </div>
-
-          {/* 3 */}
-          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
-            <div className="bg-black">
-             <video
-                className="mx-auto max-h-[500px] w-full object-contain"
-                controls
-                preload="metadata"
-                playsInline
-              >
-                <source src={education_hindi} type="video/mp4" />
-                Your browser does not support video playback.
-             </video>
-            </div>
-
-               <div className="p-5">
-                <h4 className="font-semibold text-heading">
-                   Learning & Educational Activities
-                </h4>
-
-                <p className="mt-2 text-sm leading-6 text-muted">
-                   A glimpse of learning activities and practical experiences at G.S.R. Education.
-                </p>
-               </div>
-          </div>
-          {/* 4 */}
-          <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
-            <div className="bg-black">
-             <video
-                className="mx-auto max-h-[500px] w-full object-contain"
-                controls
-                preload="metadata"
-                playsInline
-              >
-                <source src={education_kalma} type="video/mp4" />
                 Your browser does not support video playback.
              </video>
             </div>
