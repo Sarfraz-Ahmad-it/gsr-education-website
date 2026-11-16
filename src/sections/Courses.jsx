@@ -15,48 +15,56 @@ const courses = [
   {
     image: beauticianImage,
     title: "Beautician Training",
+    alt: "Women learning beautician skills during training at GSR Education Saharanpur",
     description:
       "Develop beauty care, makeup and professional grooming skills."
   },
   {
     image: mehndiImage,
     title: "Mehndi Designing",
+    alt: "Women learning traditional and creative mehndi designing skills during training at GSR Education Saharanpur",
     description:
       "Explore traditional and creative mehndi designing skills."
   },
   {
     image: tailoringImage,
     title: "Tailoring & Stitching",
+    alt: "Women learning tailoring and stitching skills during vocational training at GSR Education Saharanpur",
     description:
       "Learn stitching, sewing and garment-making skills."
   },
   {
     image: computerImage,
     title: "Computer Education",
+    alt: "Women learning basic computer skills during digital literacy training at GSR Education Saharanpur",
     description:
       "Build basic computer knowledge and digital skills."
   },
   {
     image: artsCraftsImage,
     title: "Arts & Crafts",
+    alt: "Women learning arts and crafts skills during vocational training at GSR Education Saharanpur",
     description:
       "Explore painting, embroidery, knitting and handicrafts."
   },
   {
     image: selfEmploymentImage,
     title: "Self Employment",
+    alt: "Women learning entrepreneurial skills and creating handmade products during vocational training at GSR Education Saharanpur",
     description:
       "Explore small business and self-employment opportunities."
   },
   {
     image: basicEducationImage,
     title: "Basic Education",
+    alt: "Girls learning basic education and literacy skills during educational training at GSR Education Saharanpur",
     description:
       "Promote learning, educational awareness and knowledge."
   },
   {
     image: healthImage,
     title: "Health Awareness",
+    alt: "Women learning health and wellness skills during health awareness training at GSR Education Saharanpur",
     description:
       "Understand healthcare facilities and health awareness."
   }
