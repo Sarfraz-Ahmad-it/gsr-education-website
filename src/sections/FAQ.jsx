@@ -80,7 +80,7 @@ function FAQ() {
           </span>
 
           <h2 className="mt-4 font-heading text-3xl font-bold text-heading md:text-5xl">
-            Got Questions? We Have Answers.
+             Frequently Asked Questions About G.S.R. Education
           </h2>
 
           <p className="mt-5 leading-8 text-muted">
