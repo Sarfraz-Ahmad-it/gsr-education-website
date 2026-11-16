@@ -40,7 +40,7 @@ function About() {
         >
           <img
           src={aboutImage}
-          alt="Women learning and developing practical skills"
+          alt="Children participating in reading and educational activities at GSR Education Saharanpur"
           className="h-full w-full rounded-3xl object-cover"
         />
 
@@ -71,17 +71,16 @@ function About() {
           </h2>
 
           <p className="mt-6 leading-8 text-muted">
-            Alpsankhyak Mahila Vikas Samiti is a
-            charitable organisation focused on
-            promoting education, skill development
-            and employment opportunities.
+            G.S.R. Education All Classes, associated with
+            Alpsankhyak Mahila Vikas Samiti, focuses on
+            promoting education, awareness and skill
+            development through community-oriented initiatives.
           </p>
 
           <p className="mt-4 leading-8 text-muted">
-            Our objectives include encouraging
-            women and communities to develop
-            practical skills, improve access to
-            education and work towards a more
+            The initiative aims to encourage women and
+            communities to explore educational opportunities,
+            develop practical skills and work towards a more
             independent future.
           </p>
 
