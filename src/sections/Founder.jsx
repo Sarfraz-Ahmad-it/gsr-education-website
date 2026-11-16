@@ -244,9 +244,9 @@ function Founder() {
               CERTIFICATES & RECOGNITION
             </span>
 
-            <h3 className="mt-5 font-heading text-2xl font-bold text-[#252525] sm:text-3xl lg:text-4xl">
+            <h2 className="mt-5 font-heading text-2xl font-bold text-[#252525] sm:text-3xl lg:text-4xl">
               Learning & Achievements
-            </h3>
+            </h2>
 
             <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
               A glimpse of certificates documenting participation
