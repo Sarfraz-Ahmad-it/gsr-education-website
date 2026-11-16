@@ -11,6 +11,7 @@ import tailoringImage from "../assets/images/activities/tailoring-stitching.png"
 const activities = [
   {
     title: "Educational Activities",
+    alt: "Women learning and engaging in educational activities at GSR Education Saharanpur",
     category: "EDUCATION",
     description:
       "Encouraging learning, knowledge and educational awareness.",
@@ -18,6 +19,7 @@ const activities = [
   },
   {
     title: "Beauty & Makeup",
+    alt: "Women learning beauty care and makeup techniques during training at GSR Education Saharanpur",
     category: "BEAUTY SKILLS",
     description:
       "Exploring beauty care, makeup and practical grooming skills.",
@@ -25,6 +27,7 @@ const activities = [
   },
   {
     title: "Mehndi Designing",
+    alt: "Women learning traditional and creative mehndi designing skills during training at GSR Education Saharanpur",
     category: "CREATIVE SKILLS",
     description:
       "Showcasing traditional mehndi art and creative designs.",
@@ -32,6 +35,7 @@ const activities = [
   },
   {
     title: "Tailoring & Stitching",
+    alt: "Women learning tailoring and stitching skills during vocational training at GSR Education Saharanpur",
     category: "VOCATIONAL SKILLS",
     description:
       "Promoting stitching, sewing and garment-making skills.",
