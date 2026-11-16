@@ -9,9 +9,7 @@ import {
 } from "lucide-react";
 
 const contactNumbers = [
-  "8171225629",
-  "6399556530",
-  "9720036735",
+  "917830170699"
 ];
 
 // Primary contact number for WhatsApp.
