@@ -27,12 +27,14 @@ const outreachTeams = [
   {
     image: teamImage1,
     title: "Our Outreach Team",
+    alt: "Team members of GSR Education Saharanpur actively participating in community outreach activities",
     description:
       "Our team members actively participate in community awareness visits.",
   },
   {
     image: teamImage2,
     title: "Working Together",
+    alt: "Team members, teachers and students working together to promote education at GSR Education Saharanpur",
     description:
       "Team members, teachers and students working together to promote education.",
   },
@@ -42,36 +44,42 @@ const communityVisits = [
   {
     image: visitImage1,
     title: "Parent Interaction",
+    alt: "Parents and families interacting with educators at GSR Education Saharanpur",
     description:
       "Connecting with parents and families to encourage educational awareness.",
   },
   {
     image: visitImage2,
     title: "Community Awareness",
+    alt: "Community members learning about education and skill development opportunities at GSR Education Saharanpur",
     description:
       "Spreading awareness about education and skill development.",
   },
   {
     image: visitImage3,
     title: "Family Engagement",
+    alt: "Families engaging with educators and community members at GSR Education Saharanpur",
     description:
       "Building connections with families through regular community visits.",
   },
   {
     image: visitImage4,
     title: "Education for Everyone",
+    alt: "Students and families learning together about the importance of education at GSR Education Saharanpur",
     description:
       "Encouraging students and families to explore learning opportunities.",
   },
   {
     image: visitImage5,
     title: "Learning Awareness",
+    alt: "Families learning about the importance of education and continuous learning at GSR Education Saharanpur",
     description:
       "Encouraging families to understand the value of education and learning.",
   },
   {
     image: visitImage6,
     title: "Women Empowerment",
+    alt: "Women learning about education and skill development opportunities at GSR Education Saharanpur",
     description:
       "Creating awareness about education and skill development opportunities for women.",
   },
