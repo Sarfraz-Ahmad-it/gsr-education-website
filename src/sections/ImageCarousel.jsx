@@ -120,6 +120,9 @@ function ImageCarousel() {
             <img
               src={currentSlide.image}
               alt={currentSlide.alt}
+              loading={currentIndex === 0 ? "eager" : "lazy"}
+              fetchPriority={currentIndex === 0 ? "high" : "auto"}
+              decoding="async"
               className="h-full w-full object-cover"
             />
 
@@ -142,9 +145,9 @@ function ImageCarousel() {
                 {currentSlide.label}
               </span>
 
-              <h1 className="mt-6 font-heading text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+              <h2 className="mt-6 font-heading text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
                 {currentSlide.title}
-              </h1>
+              </h2>
 
               <p className="mt-5 max-w-xl text-sm leading-7 text-white/80 sm:text-base md:text-lg">
                 {currentSlide.subtitle}
