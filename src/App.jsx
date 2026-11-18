@@ -11,16 +11,10 @@ import CommunityOutreach from "./sections/CommunityOutreach";
 import Gallery from "./sections/Gallery";
 import Contact from "./sections/Contact";
 import FAQ from "./sections/FAQ";
-import SEO from "./components/common/SEO";
 
 function App() {
   return (
     <>
-
-      <SEO
-        title="GSR Education"
-        description="G.S.R. Education All Classes promotes education, women's skill development, vocational learning and community awareness in Saharanpur"
-      />
       <Navbar />
 
       <main>
