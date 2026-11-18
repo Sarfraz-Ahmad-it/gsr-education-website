@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 // Course Images
-import beauticianImage from "../assets/images/courses/beautician-training.png";
-import mehndiImage from "../assets/images/courses/mehndi-designing.png";
-import tailoringImage from "../assets/images/courses/tailoring-stitching.png";
-import computerImage from "../assets/images/courses/computer-education.png";
-import artsCraftsImage from "../assets/images/courses/arts-crafts.png";
-import selfEmploymentImage from "../assets/images/courses/self-employment.png";
-import basicEducationImage from "../assets/images/courses/basic-education.png";
-import healthImage from "../assets/images/courses/health-awareness.png";
+import beauticianImage from "../assets/images/optimized/main/beautician-training.webp";
+import mehndiImage from "../assets/images/optimized/main/mehndi-designing.webp";
+import tailoringImage from "../assets/images/optimized/main/tailoring-stitching.webp";
+import computerImage from "../assets/images/optimized/main/computer-education.webp";
+import artsCraftsImage from "../assets/images/optimized/main/arts-crafts.webp";
+import selfEmploymentImage from "../assets/images/optimized/main/self-employment.webp";
+import basicEducationImage from "../assets/images/optimized/main/basic-education.webp";
+import healthImage from "../assets/images/optimized/main/health-awareness.webp";
 
 const courses = [
   {

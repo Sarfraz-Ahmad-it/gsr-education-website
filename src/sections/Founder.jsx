@@ -11,14 +11,14 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import founderImage from "../assets/images/founder/gulab-bano.jpg";
+import founderImage from "../assets/images/optimized/founder/gulab-bano.webp";
 
-import knittingCertificate from "../assets/images/founder/certificates/knitting-certificate.jpg";
-import vocationalCertificate1 from "../assets/images/founder/certificates/vocational-certificate-01.jpg";
-import skillIndiaCertificate from "../assets/images/founder/certificates/skill-india-certificate.jpg";
-import vocationalCertificate2 from "../assets/images/founder/certificates/vocational-certificate-02.jpg";
-import SewingTailoring  from "../assets/images/founder/certificates/SewingTailoring-05.jpg";
-import VocationalHandicraft  from "../assets/images/founder/certificates/VocationalHandicraft-06.jpg";
+import knittingCertificate from "../assets/images/optimized/founder/knitting-certificate.webp";
+import vocationalCertificate1 from "../assets/images/optimized/founder/vocational-certificate-01.webp";
+import skillIndiaCertificate from "../assets/images/optimized/founder/skill-india-certificate.webp";
+import vocationalCertificate2 from "../assets/images/optimized/founder/vocational-certificate-02.webp";
+import SewingTailoring  from "../assets/images/optimized/founder/SewingTailoring-05.webp";
+import VocationalHandicraft  from "../assets/images/optimized/founder/VocationalHandicraft-06.webp";
 
 const certificates = [
   {

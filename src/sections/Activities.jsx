@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 // Activity Images
-import educationImage from "../assets/images/activities/educational-activities.png";
-import beautyImage from "../assets/images/activities/beauty-makeup.png";
-import mehndiImage from "../assets/images/activities/mehndi-designing.png";
-import tailoringImage from "../assets/images/activities/tailoring-stitching.png";
+import educationImage from "../assets/images/optimized/activities/educational-activities.webp";
+import beautyImage from "../assets/images/optimized/activities/beauty-makeup.webp";
+import mehndiImage from "../assets/images/optimized/activities/mehndi-designing.webp";
+import tailoringImage from "../assets/images/optimized/activities/tailoring-stitching.webp";
 
 const activities = [
   {

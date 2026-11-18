@@ -1,36 +1,36 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Learning & Activities Images
-import educationImage from "../assets/images/gallery/educational-activities.png";
-import beautyImage from "../assets/images/gallery/beauty-makeup.png";
-import mehndiActivityImage from "../assets/images/gallery/creative-mehndi-art.png";
-import tailoringImage from "../assets/images/gallery/tailoring-stitching.png";
-import learningImage from "../assets/images/gallery/learning-together.png";
-import digitalImage from "../assets/images/gallery/digital-learning.png";
+import educationImage from "../assets/images/optimized/gallery/educational-activities.webp";
+import beautyImage from "../assets/images/optimized/gallery/beauty-makeup.webp";
+import mehndiActivityImage from "../assets/images/optimized/gallery/creative-mehndi-art.webp";
+import tailoringImage from "../assets/images/optimized/gallery/tailoring-stitching.webp";
+import learningImage from "../assets/images/optimized/gallery/learning-together.webp";
+import digitalImage from "../assets/images/optimized/gallery/digital-learning.webp";
 
 // Client's Original Mehndi Designs
-import mehndi1 from "../assets/images/gallery/portfolio/mehndi-01.jpg";
-import mehndi2 from "../assets/images/gallery/portfolio/mehndi-02.jpg";
-import mehndi3 from "../assets/images/gallery/portfolio/mehndi-03.jpg";
-import mehndi4 from "../assets/images/gallery/portfolio/mehndi-04.jpg";
-import mehndi5 from "../assets/images/gallery/portfolio/mehndi-05.jpg";
-import mehndi6 from "../assets/images/gallery/portfolio/mehndi-06.jpg";
+import mehndi1 from "../assets/images/optimized/gallery/mehndi-01.webp";
+import mehndi2 from "../assets/images/optimized/gallery/mehndi-02.webp";
+import mehndi3 from "../assets/images/optimized/gallery/mehndi-03.webp";
+import mehndi4 from "../assets/images/optimized/gallery/mehndi-04.webp";
+import mehndi5 from "../assets/images/optimized/gallery/mehndi-05.webp";
+import mehndi6 from "../assets/images/optimized/gallery/mehndi-06.webp";
 
 
 // Client's Original Bridal Makeup Looks
-import bridal1 from "../assets/images/gallery/portfolio/bridal-01.jpg";
-import bridal2 from "../assets/images/gallery/portfolio/bridal-02.jpg";
-import bridal3 from "../assets/images/gallery/portfolio/bridal-03.jpg";
-import bridal4 from "../assets/images/gallery/portfolio/bridal-04.jpg";
-import bridal5 from "../assets/images/gallery/portfolio/bridal-05.jpg";
-import bridal6 from "../assets/images/gallery/portfolio/bridal-06.jpg";
+import bridal1 from "../assets/images/optimized/gallery/bridal-01.webp";
+import bridal2 from "../assets/images/optimized/gallery/bridal-02.webp";
+import bridal3 from "../assets/images/optimized/gallery/bridal-03.webp";
+import bridal4 from "../assets/images/optimized/gallery/bridal-04.webp";
+import bridal5 from "../assets/images/optimized/gallery/bridal-05.webp";
+import bridal6 from "../assets/images/optimized/gallery/bridal-06.webp";
 
 //Learning video and beauty skills
-import beauty from "../assets/videos/beauty.mp4"; 
-import education1 from "../assets/videos/education01.mp4"; 
+import beauty from "../assets/videos/optimized/beauty.mp4";
+import education1 from "../assets/videos/optimized/education01.mp4";
 
 const galleryImages = [
   {

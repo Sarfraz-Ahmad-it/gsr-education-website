@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { BookOpen, Users, BriefcaseBusiness, HeartHandshake } from "lucide-react";
-import aboutImage from "../assets/images/about-institution.png";
+import aboutImage from "../assets/images/optimized/main/about-institution.webp";
 const focusAreas = [
   {
     icon: BookOpen,

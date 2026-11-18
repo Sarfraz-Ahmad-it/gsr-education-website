@@ -1,6 +1,6 @@
 
 import { ArrowUp, MapPin, Phone, MessageCircle, ArrowUpRight } from "lucide-react";
-import logo from "../../assets/images/logo_gsr.png";
+import logo from "../../assets/images/optimized/logo_gsr.webp";
 
 const footerLinks = [
   { name: "Home", href: "#home" },

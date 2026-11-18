@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
-import heroImage from "../assets/images/hero-education.png";
+import heroImage from "../assets/images/optimized/main/hero-education.webp";
 
 function Hero() {
   return (

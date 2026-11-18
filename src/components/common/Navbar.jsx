@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from "../../assets/images/logo_gsr.png";
+import logo from "../../assets/images/optimized/logo_gsr.webp";
 
 const navLinks = [
   { name: "Home", href: "#home" },

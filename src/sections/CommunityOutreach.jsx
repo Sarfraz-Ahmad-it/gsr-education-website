@@ -12,16 +12,16 @@ import {
 } from "lucide-react";
 
 // Outreach team images
-import teamImage1 from "../assets/images/community/outreach-team-01.jpg";
-import teamImage2 from "../assets/images/community/outreach-team-02.jpg";
+import teamImage1 from "../assets/images/optimized/community/outreach-team-01.webp";
+import teamImage2 from "../assets/images/optimized/community/outreach-team-02.webp";
 
 // Parent and student interaction images
-import visitImage1 from "../assets/images/community/parent-visit-01.jpg";
-import visitImage2 from "../assets/images/community/parent-visit-02.jpg";
-import visitImage3 from "../assets/images/community/parent-visit-03.jpg";
-import visitImage4 from "../assets/images/community/parent-visit-04.jpg";
-import visitImage5 from "../assets/images/community/parent-visit-05.jpg";
-import visitImage6 from "../assets/images/community/parent-visit-06.jpg";
+import visitImage1 from "../assets/images/optimized/community/parent-visit-01.webp";
+import visitImage2 from "../assets/images/optimized/community/parent-visit-02.webp";
+import visitImage3 from "../assets/images/optimized/community/parent-visit-03.webp";
+import visitImage4 from "../assets/images/optimized/community/parent-visit-04.webp";
+import visitImage5 from "../assets/images/optimized/community/parent-visit-05.webp";
+import visitImage6 from "../assets/images/optimized/community/parent-visit-06.webp";
 
 const outreachTeams = [
   {

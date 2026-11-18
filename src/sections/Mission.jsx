@@ -2,12 +2,12 @@
 import { motion } from "framer-motion";
 
 // Import Mission Images
-import educationImage from "../assets/images/mission/education-awareness.png";
-import vocationalImage from "../assets/images/mission/vocational-skills.png";
-import beautyImage from "../assets/images/mission/personal-care.png";
-import employmentImage from "../assets/images/mission/employment-opportunities.png";
-import digitalImage from "../assets/images/mission/digital-skills.png";
-import healthImage from "../assets/images/mission/health-wellbeing.png";
+import educationImage from "../assets/images/optimized/main/education-awareness.webp";
+import vocationalImage from "../assets/images/optimized/main/vocational-skills.webp";
+import beautyImage from "../assets/images/optimized/main/personal-care.webp";
+import employmentImage from "../assets/images/optimized/main/employment-opportunities.webp";
+import digitalImage from "../assets/images/optimized/main/digital-skills.webp";
+import healthImage from "../assets/images/optimized/main/health-wellbeing.webp";
 
 const objectives = [
   {
