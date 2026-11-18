@@ -287,7 +287,7 @@ function Gallery() {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5">
             {mehndiPortfolio.map((image, index) => (
               <GalleryCard
-                key={image.title}
+                key={image.src}
                 image={image}
                 index={index}
                 onClick={() => setSelectedImage(image)}

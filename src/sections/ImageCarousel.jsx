@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-// Carousel Images
+// Optimized Carousel Images
 import educationImage from "../assets/images/optimized/carousel/01-education-brighter-future.webp";
 import skillsImage from "../assets/images/optimized/carousel/02-learn-skills-build-confidence.webp";
 import womenImage from "../assets/images/optimized/carousel/03-creating-opportunities-for-women.webp";
 import growthImage from "../assets/images/optimized/carousel/04-building-knowledge-inspiring-growth.webp";
+
 // Slide Content
 const slides = [
   {
@@ -68,7 +69,7 @@ function ImageCarousel() {
     if (isPaused) return;
 
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -106,28 +107,32 @@ function ImageCarousel() {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Background Images */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.6 }}
-            className="absolute inset-0"
-          >
-            <img
-              src={currentSlide.image}
-              alt={currentSlide.alt}
-              loading={currentIndex === 0 ? "eager" : "lazy"}
-              fetchPriority={currentIndex === 0 ? "high" : "auto"}
-              decoding="async"
-              className="h-full w-full object-cover"
-            />
+        {/* Background Images - Keep All Images Mounted */}
+        <div className="absolute inset-0">
+          {slides.map((slide, index) => (
+            <motion.div
+              key={slide.image}
+              initial={false}
+              animate={{
+                opacity: currentIndex === index ? 1 : 0,
+              }}
+              transition={{ duration: 0.6 }}
+              aria-hidden="true"
+              className="absolute inset-0 pointer-events-none"
+            >
+              <img
+                src={slide.image}
+                alt=""
+                loading="eager"
+                fetchPriority={index === 0 ? "high" : "low"}
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/20" />
-          </motion.div>
-        </AnimatePresence>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/20" />
+            </motion.div>
+          ))}
+        </div>
 
         {/* Slide Content */}
         <div className="relative z-10 mx-auto flex min-h-[390px] max-w-7xl items-center px-12 py-16 sm:min-h-[440px] sm:px-16 md:min-h-[540px] md:px-20 lg:min-h-[580px]">
@@ -206,4 +211,3 @@ function ImageCarousel() {
 }
 
 export default ImageCarousel;
-
