@@ -4,11 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 // Carousel Images
-import educationImage from "../assets/images/carousel/01-education-brighter-future.png";
-import skillsImage from "../assets/images/carousel/02-learn-skills-build-confidence.png";
-import womenImage from "../assets/images/carousel/03-creating-opportunities-for-women.png";
-import growthImage from "../assets/images/carousel/04-building-knowledge-inspiring-growth.png";
-
+import educationImage from "../assets/images/optimized/carousel/01-education-brighter-future.webp";
+import skillsImage from "../assets/images/optimized/carousel/02-learn-skills-build-confidence.webp";
+import womenImage from "../assets/images/optimized/carousel/03-creating-opportunities-for-women.webp";
+import growthImage from "../assets/images/optimized/carousel/04-building-knowledge-inspiring-growth.webp";
 // Slide Content
 const slides = [
   {
