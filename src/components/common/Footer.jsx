@@ -161,7 +161,7 @@ function Footer() {
               </p>
 
                <p className="text-white/50">
-                    CEO: Mohd Ather
+                    CEO: Mohammad Ather
                 </p>
 
                 <a
@@ -175,7 +175,7 @@ function Footer() {
                   href="tel:+919762575567"
                   className="text-white/50 transition-colors hover:text-accent"
                 >
-                  +91 97625 75567
+                 Contact: +91 97625 75567
                 </a>
 
             </div>
