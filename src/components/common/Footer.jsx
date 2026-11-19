@@ -164,13 +164,15 @@ function Footer() {
                   CEO: Mohammad Ather
                 </p>
 
-                <div className="flex flex-wrap items-center gap-4 text-white/50">
+                <div className="flex flex-wrap items-center gap-1 text-white/50">
                   <a href="tel:+919762575567" className="hover:text-accent transition-colors">
                     📞 +91 97625 75567
                   </a>
 
+                  <span className="text-white/40">|</span>
+                      
                   <a href="mailto:athertanveer6@gmail.com" className="hover:text-accent transition-colors">
-                    ✉️ athertanveer6@gmail.com
+                  ✉️ athertanveer6@gmail.com
                   </a>
                 </div>
 
