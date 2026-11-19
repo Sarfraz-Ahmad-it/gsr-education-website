@@ -161,22 +161,18 @@ function Footer() {
               </p>
 
                <p className="text-white/50">
-                    CEO: Mohammad Ather
+                  CEO: Mohammad Ather
                 </p>
 
-                <a
-                  href="mailto:athertanveer6@gmail.com"
-                  className="text-white/50 transition-colors hover:text-accent"
-                >
-                  athertanveer6@gmail.com
-                </a>
+                <div className="flex flex-wrap items-center gap-4 text-white/50">
+                  <a href="tel:+919762575567" className="hover:text-accent transition-colors">
+                    📞 +91 97625 75567
+                  </a>
 
-                <a
-                  href="tel:+919762575567"
-                  className="text-white/50 transition-colors hover:text-accent"
-                >
-                 Contact: +91 97625 75567
-                </a>
+                  <a href="mailto:athertanveer6@gmail.com" className="hover:text-accent transition-colors">
+                    ✉️ athertanveer6@gmail.com
+                  </a>
+                </div>
 
             </div>
 
