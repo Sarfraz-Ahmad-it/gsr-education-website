@@ -160,23 +160,23 @@ function Footer() {
                 </span>
               </p>
 
-              <p className="text-white/50">
-                CEO: Mohammad Ather
-              </p>
+               <p className="text-white/50">
+                    CEO: Mohd Ather
+                </p>
 
-              <a
-                href="tel:+919762575567"
-                className="text-white/50 transition-colors hover:text-accent"
-              >
-                Contact: +91 97625 75567
-              </a>
+                <a
+                  href="mailto:athertanveer6@gmail.com"
+                  className="text-white/50 transition-colors hover:text-accent"
+                >
+                  athertanveer6@gmail.com
+                </a>
 
-              <p className="text-white/70">
-                Website Maintained by{" "}
-                <span className="font-semibold text-white">
-                  Sarfraz Ahmad
-                </span>
-              </p>
+                <a
+                  href="tel:+919762575567"
+                  className="text-white/50 transition-colors hover:text-accent"
+                >
+                  +91 97625 75567
+                </a>
 
             </div>
 
