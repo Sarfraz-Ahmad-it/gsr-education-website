@@ -138,24 +138,62 @@ function Footer() {
           </div>
 
         </div>
-
+        
         {/* Bottom Footer */}
-        <div className="mt-14 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-7 sm:flex-row">
+        <div className="mt-14 border-t border-white/10 pt-7">
 
-          <p className="text-center text-xs leading-6 text-white/50">
-            © {new Date().getFullYear()} G.S.R. Education All Classes.
-            All rights reserved.
-          </p>
+          <div className="grid grid-cols-1 items-center gap-6 text-center sm:grid-cols-3 sm:text-left">
 
-          <a
-            href="#home"
-            aria-label="Back to top"
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-accent hover:text-primary hover:-translate-y-1"
-          >
-            <ArrowUp size={19} />
-          </a>
+            {/* Copyright */}
+            <p className="text-xs leading-6 text-white/50">
+              © {new Date().getFullYear()} G.S.R. Education All Classes.
+              All rights reserved.
+            </p>
 
+            {/* Website Credits */}
+            <div className="flex flex-col items-center gap-2 text-xs leading-5">
+
+              <p className="text-white/70">
+                Designed & Developed by{" "}
+                <span className="font-semibold text-white">
+                  Indian Industries
+                </span>
+              </p>
+
+              <p className="text-white/50">
+                CEO: Mohammad Ather
+              </p>
+
+              <a
+                href="tel:+919762575567"
+                className="text-white/50 transition-colors hover:text-accent"
+              >
+                Contact: +91 97625 75567
+              </a>
+
+              <p className="text-white/70">
+                Website Maintained by{" "}
+                <span className="font-semibold text-white">
+                  Sarfraz Ahmad
+                </span>
+              </p>
+
+            </div>
+
+            {/* Back to Top */}
+            <div className="flex justify-center sm:justify-end">
+              <a
+                href="#home"
+                aria-label="Back to top"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-accent hover:text-primary"
+              >
+                <ArrowUp size={19} />
+              </a>
+            </div>
+
+          </div>
         </div>
+
 
       </div>
     </footer>
