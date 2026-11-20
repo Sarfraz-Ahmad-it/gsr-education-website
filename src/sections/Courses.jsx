@@ -138,14 +138,6 @@ function Courses() {
                   {course.description}
                 </p>
 
-                <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-primary">
-                  Explore Area
-
-                  <span className="transition-transform duration-300 group-hover:translate-x-2">
-                    →
-                  </span>
-                </div>
-
               </div>
             </motion.div>
           ))}

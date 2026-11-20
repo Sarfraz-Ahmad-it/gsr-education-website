@@ -13,7 +13,7 @@ const footerLinks = [
 ];
 
 const contactNumbers = [
-  "917830170699"
+  "7830170699"
 ];
 
 // Confirm this is the institution's official WhatsApp number.

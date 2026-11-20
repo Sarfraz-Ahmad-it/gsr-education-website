@@ -9,12 +9,12 @@ import {
 } from "lucide-react";
 
 const contactNumbers = [
-  "917830170699"
+  "7830170699"
 ];
 
 // Primary contact number for WhatsApp.
 // Confirm with the client before publishing.
-const whatsappNumber = "917830170699";
+const whatsappNumber = "7830170699";
 
 const address =
   "Nishat Colony, Habibgarh Road, Saharanpur, Uttar Pradesh, India";

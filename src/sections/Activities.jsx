@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 
 // Activity Images
 import educationImage from "../assets/images/optimized/activities/educational-activities.webp";
@@ -107,12 +106,7 @@ function Activities() {
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="font-heading text-lg font-bold text-heading">
                     {activity.title}
-                  </h3>
-
-                  <ArrowUpRight
-                    size={19}
-                    className="shrink-0 text-primary transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
-                  />
+                 </h3>
                 </div>
 
                 <p className="mt-3 text-sm leading-7 text-muted">
